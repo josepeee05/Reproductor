@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    background: url("../img/rock.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 96.8vh;
+    position: relative;
+} */
+
+
+.imagenCancion{
+    width: 80%;
+    height: 40%;
+    background: #92949700;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 68px auto 0;
+    border-radius: 20px;
+    border: #fff 2px solid;
+    /* background: url("../img/fondo.png"); */
+}
+
+#reproductor{
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    height: 100vh;
+    margin: 0 auto;
+    background-size: cover;
+    position: relative;
+    padding-top: 1px; /* Ajusta el padding-top según sea necesario */
+    background-position: center;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 20px;
+}
+
+.reproducir {
+    background: #0e222563;
+    width: 80%;
+    border-radius: 30px;
+    padding-bottom: 90px;
+    padding-top: 20px;
+    position: absolute;
+    top: 65%;
+    left: 40px;
+    backdrop-filter: blur(10px);
+    height: 250px;
+    border: #fff 1px solid;
+}
+
+.reproducir h3 {
+    color: #fff;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.reproducir p {
+    color: #ffffff;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.reproducir #song-artist{
+    padding-top: 0;
+    color: #c4c4c4;
+}
+
+.minutos {
+    color: #fff;
+}
+
+.barra {
+    position: relative; /* Agregado */
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 3px;
+    background: #b2adad; /* Color de la barra gris */
+    margin: 0 auto;
+}
+
+
+.rojo {
+    height: 100%; /* La altura de la barra roja debe ser igual a la de la barra contenedora */
+    width: 0%; /* La barra roja empieza en 0 y su tamaño se actualizará en el script */
+    background: #db0d0d;
+}
+
+.minutos {
+    display: flex;
+    justify-content: space-between;
+    margin: -4px 20px;
+}
+
+.iconos2 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.iconos2 #prev-btn{
+    transform: rotate(180deg);
+}
+
+#random{
+    transition: 1s ;
+    mask-image: linear-gradient(80%, transparent);
+    
+}
+
+#random.active{
+    filter: brightness(100%);
+    transform: scale(1.2);
+    border-radius: 10px;
+    box-shadow: 0 0 8px 3px #929497
+}
